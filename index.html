@@ -1,0 +1,512 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王一鸣 - AIoT平台与互联网产品专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a56db',
+                        secondary: '#4b5563',
+                        accent: '#0ea5e9',
+                        light: '#f3f4f6',
+                        dark: '#1f2937'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            }
+            .bg-gradient {
+                background: linear-gradient(135deg, #1a56db 0%, #0ea5e9 100%);
+            }
+            .skill-tag {
+                @apply px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium transition-all duration-200;
+            }
+            .skill-tag:hover {
+                @apply bg-blue-200 transform scale-105;
+            }
+            .timeline-dot {
+                @apply absolute left-0 w-4 h-4 bg-primary rounded-full border-2 border-white;
+            }
+            .timeline-line {
+                @apply absolute left-2 top-4 bottom-0 w-0.5 bg-gray-200;
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
+            }
+            .section-divider {
+                @apply w-16 h-1 bg-gradient rounded-full my-6;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+
+    <!-- 主要内容 -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- 个人信息卡片 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <div class="flex flex-col md:flex-row md:items-center justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-2" style="font-weight: bold;">王一鸣 <span class="text-xl text-secondary font-normal">产品专家</span></h2>
+                    <p class="text-xl text-secondary mb-4">AIoT平台 · 大规模设备管理平台 · 本地生活</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="skill-tag"><i class="fa fa-map-marker mr-1"></i> 广东深圳</span>
+                        <span class="skill-tag"><i class="fa fa-phone mr-1"></i> 18938885286</span>
+                        <span class="skill-tag"><i class="fa fa-envelope mr-1"></i> wymplus@qq.com</span>
+                        <span class="skill-tag"><i class="fa fa-briefcase mr-1"></i> 18年经验</span>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心亮点 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-card p-6 card-hover">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">产品创新</h3>
+                </div>
+                <p class="text-secondary">AI agent+大模型丰富实践经验，熟练使用Claude Code/Codex等AI编程产品实现全栈解决方案</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-card p-6 card-hover">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fa fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">团队领导力</h3>
+                </div>
+                <p class="text-secondary">在头部互联网公司带领产品&amp;设计团队，聚焦目标，以结果为导向交付成果</p>
+            </div>
+            <div class="bg-white rounded-xl shadow-card p-6 card-hover">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fa fa-line-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark">业务成就</h3>
+                </div>
+                <p class="text-secondary">负责千万级DAU产品、百万级设备网络及千万级IoT物料体系建设，推动核心业务增长</p>
+            </div>
+        </div>
+
+        <!-- 个人简介 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">个人简介</h2>
+            <div class="section-divider"></div>
+            <p class="text-secondary mb-4">
+                18年产品与技术经验，具备通信基础设施、IoT平台、大规模设备管理网络、互联网平台及本地生活生态等复合背景。
+                AI agent+大模型的丰富实践经验，熟练使用claude code/codex等AI编程产品实现从产品设计到项目落地全栈解决方案。
+            </p>
+            <p class="text-secondary mb-4">
+                在头部互联网公司带过产品&amp;设计团队，具备带领团队聚焦目标，以结果为导向交付结果的实践经验。
+                在支付宝负责过如乘车码、ETC、蜻蜓刷脸支付、"碰一下"、"本地生活"等核心业务，具备千万级DAU业务、百万级设备网络及亿级IoT物料体系建设经验。
+            </p>
+            <p class="text-secondary">
+                个性稳重且擅长系统性拆解复杂问题，具备强烈的团队协作意识与协同能力，始终以明确目标为导向开展工作。
+            </p>
+        </div>
+
+        <!-- 项目经历 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">项目经历</h2>
+            <div class="section-divider"></div>
+            
+            <div class="space-y-8">
+                <!-- 项目1 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">支付宝"神券"本地生活平台</h3>
+                            <span class="text-sm text-secondary font-medium">2026-至今</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            神券本地生活平台主要负责商家和服务商生态的供给平台，提供百万级线上化团购商品的供给。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>负责商家/服务商招商入驻、一站式经营工作台、AI商家辅助经营工具的产品设计与落地</li>
+                            <li>推动支付生态商家向本地生活业务转化，提升平台GMV和商家活跃度</li>
+                            <li>构建AI驱动的商家经营工具，提升商家运营效率30%以上</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">本地生活</span>
+                            <span class="skill-tag">商家生态</span>
+                            <span class="skill-tag">AI工具</span>
+                            <span class="skill-tag">供给平台</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">"碰一下"设备&amp;物料网络平台</h3>
+                            <span class="text-sm text-secondary font-medium">2024-2026</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            "碰一下"终端产品创新利用手机NFC读卡能力替代传统高成本终端，实现低成本触达。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>服务场景：负责千万级碰一下物料的申购-交付-履约平台的建设</li>
+                            <li>覆盖场景：物料终端覆盖快递柜、演唱会、门禁、闸机、文旅等百种场景</li>
+                            <li>支付场景：提供支付宝出品的N5D终端，负责终端物料网络包括下行到商家，日常监控平台的建设</li>
+                            <li>商业价值：终端覆盖便利店、商超、餐饮、零食烘焙等多种场景，降低商户接入成本80%</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">NFC技术</span>
+                            <span class="skill-tag">物料网络</span>
+                            <span class="skill-tag">成本优化</span>
+                            <span class="skill-tag">多场景覆盖</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目3 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">支付宝刷脸设备网络平台</h3>
+                            <span class="text-sm text-secondary font-medium">2022-2024</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            带领团队负责全国刷脸智能支付设备网络平台建设，包括自研的蜻蜓系列和生态刷脸设备。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>设备规模：覆盖60万+活跃刷脸终端，实现95%+设备可见、可查、可追溯</li>
+                            <li>平台建设：构建设备管理、监控、运维一体化平台，提升设备运营效率</li>
+                            <li>生态拓展：引入医疗、团餐等多种场景的生态刷脸设备，丰富应用场景</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">刷脸支付</span>
+                            <span class="skill-tag">设备管理</span>
+                            <span class="skill-tag">平台建设</span>
+                            <span class="skill-tag">生态拓展</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目4 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">蜻蜓刷脸设备</h3>
+                            <span class="text-sm text-secondary font-medium">2020-2022</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            负责蜻蜓系统的整体产品建设，包括定制化系统、消息中心、海报中心等功能模块。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>系统创新：在低成本设备上引入支付宝小程序生态，扩展设备能力边界</li>
+                            <li>生态合作：吸引上千家服务商合作开发蜻蜓设备应用，丰富设备功能</li>
+                            <li>场景覆盖：推广到便利店、商超、餐饮等多个场景，提升用户触达</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">刷脸设备</span>
+                            <span class="skill-tag">小程序生态</span>
+                            <span class="skill-tag">服务商合作</span>
+                            <span class="skill-tag">场景拓展</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目5 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">支付宝ETC业务</h3>
+                            <span class="text-sm text-secondary font-medium">2018-2019</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            借助19年国家大力推行ETC的契机，推出支付宝面向C端的ETC服务产品。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>战略合作：撬动支付宝与江苏、北京、山东等ETC发行平台合作</li>
+                            <li>业务规模：面向C端用户月发行量突破200万+</li>
+                            <li>产品架构：负责ETC服务整体产品的架构和实现，包括与发行方的合作和面向C端的用户端产品</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">ETC服务</span>
+                            <span class="skill-tag">战略合作</span>
+                            <span class="skill-tag">C端产品</span>
+                            <span class="skill-tag">业务增长</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目6 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">支付宝乘车码</h3>
+                            <span class="text-sm text-secondary font-medium">2016-2018</span>
+                        </div>
+                        <p class="text-secondary mb-3">
+                            支付宝乘车码项目推动刷码乘车的DAU从50万增长至2000万+，实现全国核心城市地铁覆盖。
+                        </p>
+                        <ul class="list-disc list-inside text-secondary space-y-2 mb-3">
+                            <li>产品创新：负责地铁方向的产品方案设计，包括与广州、北京、杭州等头部地铁公司共创刷离线码乘车方案</li>
+                            <li>技术突破：解决地铁场景下的网络不稳定、高并发等技术难题</li>
+                            <li>业务增长：DAU增长40倍，成为公共交通数字化的标杆产品</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag">公共交通</span>
+                            <span class="skill-tag">离线支付</span>
+                            <span class="skill-tag">DAU增长</span>
+                            <span class="skill-tag">城市覆盖</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 工作经历 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">工作经历</h2>
+            <div class="section-divider"></div>
+            
+            <div class="space-y-8">
+                <!-- 工作1 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">蚂蚁集团 | 产品专家</h3>
+                            <span class="text-sm text-secondary font-medium">2016-至今 | 10年</span>
+                        </div>
+                        <ul class="list-disc list-inside text-secondary space-y-2">
+                            <li>2026-至今：支付宝神券团购B端供给产品负责人</li>
+                            <li>2024-2026：支付宝碰一下设备&amp;物料网络平台负责人</li>
+                            <li>2022-2024：支付宝蜻蜓及生态刷脸设备网络平台负责人</li>
+                            <li>2020-2022：支付宝蜻蜓系统及开放产品负责人</li>
+                            <li>2018-2019：支付宝ETC产品负责人</li>
+                            <li>2016-2018：支付宝乘车码产品负责人</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 工作2 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">奇酷互联网络科技 | 产品经理</h3>
+                            <span class="text-sm text-secondary font-medium">2016 | 1年</span>
+                        </div>
+                        <p class="text-secondary">2016-2016：360手机产品经理，负责手机系统功能规划和用户体验优化</p>
+                    </div>
+                </div>
+
+                <!-- 工作3 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">大联大控股 | 产品解决方案</h3>
+                            <span class="text-sm text-secondary font-medium">2012-2016 | 4年</span>
+                        </div>
+                        <p class="text-secondary">2012-2016：行业产品解决方案，负责电子元器件分销的行业解决方案设计</p>
+                    </div>
+                </div>
+
+                <!-- 工作4 -->
+                <div class="relative pl-8">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                    <div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">艾默生网络能源 | 研发工程师</h3>
+                            <span class="text-sm text-secondary font-medium">2008-2012 | 4年</span>
+                        </div>
+                        <p class="text-secondary">2008-2012：移动&amp;新能源基础设施监控网络平台研发，负责通信基站和数据中心监控系统开发</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 教育经历 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">教育经历</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <i class="fa fa-graduation-cap text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-dark">南京理工大学 自动化学院</h3>
+                        <p class="text-secondary">硕士 | 2006-2008</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <i class="fa fa-graduation-cap text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-dark">南京理工大学 机械工程学院</h3>
+                        <p class="text-secondary">本科 | 2001-2005</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能专长 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">技能专长</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold text-dark mb-3">专业技能</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">AI产品设计</span>
+                        <span class="skill-tag">AIoT平台</span>
+                        <span class="skill-tag">开放平台</span>
+                        <span class="skill-tag">服务商生态</span>
+                        <span class="skill-tag">产研全栈</span>
+                        <span class="skill-tag">B/C侧产品</span>
+                        <span class="skill-tag">设备网络</span>
+                        <span class="skill-tag">物料体系</span>
+                        <span class="skill-tag">业务增长</span>
+                        <span class="skill-tag">团队管理</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-dark mb-3">工具与技术</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Claude Code</span>
+                        <span class="skill-tag">Codex</span>
+                        <span class="skill-tag">AI编程</span>
+                        <span class="skill-tag">产品设计</span>
+                        <span class="skill-tag">项目管理</span>
+                        <span class="skill-tag">数据分析</span>
+                        <span class="skill-tag">用户研究</span>
+                        <span class="skill-tag">原型设计</span>
+                        <span class="skill-tag">需求管理</span>
+                        <span class="skill-tag">英语</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 作品集 -->
+        <div class="bg-white rounded-xl shadow-card p-8 mb-8 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">作品集</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://b.alipay.com" target="_blank" class="block p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                    <h3 class="text-lg font-bold text-primary mb-2">神券工作台</h3>
+                    <p class="text-sm text-secondary">b.alipay.com - 解决方案 - 神券工作台</p>
+                </a>
+                <a href="https://peng.alipay.com" target="_blank" class="block p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                    <h3 class="text-lg font-bold text-primary mb-2">碰一下开放平台</h3>
+                    <p class="text-sm text-secondary">peng.alipay.com</p>
+                </a>
+                <a href="https://iot.open.alipay.com.cn" target="_blank" class="block p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                    <h3 class="text-lg font-bold text-primary mb-2">IoT开放平台</h3>
+                    <p class="text-sm text-secondary">iot.open.alipay.com.cn</p>
+                </a>
+                <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                    <h3 class="text-lg font-bold text-primary mb-2">ETC服务</h3>
+                    <p class="text-sm text-secondary">支付宝app-搜索"ETC服务"</p>
+                </a>
+                <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                    <h3 class="text-lg font-bold text-primary mb-2">乘车码</h3>
+                    <p class="text-sm text-secondary">支付宝app-出行-乘车码</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+        // 打印功能
+        document.getElementById('printBtn').addEventListener('click', function() {
+            window.print();
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 技能标签悬停效果
+        document.querySelectorAll('.skill-tag').forEach(tag => {
+            tag.addEventListener('mouseenter', function() {
+                this.classList.add('scale-105');
+            });
+            tag.addEventListener('mouseleave', function() {
+                this.classList.remove('scale-105');
+            });
+        });
+
+        // 卡片滚动动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.classList.add('transition-all', 'duration-500', 'opacity-0', 'translate-y-4');
+            observer.observe(card);
+        });
+    </script>
+
+</body></html>
